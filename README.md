@@ -4,7 +4,7 @@ Aplicación web para la gestión de turnos desarrollada con **FastAPI**, **Mongo
 
 Permite a los usuarios solicitar turnos y a los administradores gestionar reservas mediante un panel con calendario interactivo.
 
---
+---
 
 ## Funcionalidades
 
@@ -74,9 +74,7 @@ turnos_app/
         └── configuracion.js
 ```
 
----
-
-## ⚙️ Instalación y ejecución
+## Instalación y ejecución
 
 ### 1. Clonar el repositorio
 
