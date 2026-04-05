@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard de Turnos</title>
+  <link rel="stylesheet" href="/static/css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.19/index.global.min.css">
+</head>
+<body>
+  
+  <div class="container dashboard-container">
+    <div class="topbar">
+      <div class="topbar-left">
+        <h2>Panel Admin</h2>
+      </div>
+
+      <div class="topbar-right">
+        <a href="/configuracion" class="topbar-action">Configuración</a>
+        <button id="btn-logout">Cerrar sesión</button>
+      </div>
+    </div>
+    <h1>Reservas</h1>
+
+    <div class="dashboard-section">
+      <h2>Calendario de turnos</h2>
+      <div id="calendar"></div>
+  </div>
+    <div class="dashboard-section">
+      <h2>Listado de turnos</h2>
+
+      <div class="tabla-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Apellido</th>
+              <th>Fecha</th>
+              <th>Hora</th>
+              <th>Contacto</th>
+              <th>Email</th>
+              <th>Accion</th>
+            </tr>
+          </thead>
+          <tbody id="tabla-turnos"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <p id="mensaje-dashboard"></p>
+  </div>
+  <div id="modal-turno" class="modal oculto">
+  <div class="modal-contenido">
+    <span id="cerrar-modal" class="cerrar-modal">&times;</span>
+    <h2>Detalle de la reserva</h2>
+
+    <p><strong>Nombre:</strong> <span id="modal-nombre"></span></p>
+    <p><strong>Apellido:</strong> <span id="modal-apellido"></span></p>
+    <p><strong>Fecha:</strong> <span id="modal-dia"></span></p>
+    <p><strong>Hora:</strong> <span id="modal-hora"></span></p>
+    <p><strong>Contacto:</strong> <span id="modal-contacto"></span></p>
+    <p><strong>Email:</strong> <span id="modal-email"></span></p>
+  </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.19/index.global.min.js"></script>
+  <script src="/static/js/dashboard.js"></script>
+</body>
+</html>

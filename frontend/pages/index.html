@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reserva de Turnos</title>
+  <link rel="stylesheet" href="/static/css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/dark.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="admin-link">
+    <a href="/admin" class="btn-admin">Admin</a>
+  </div>
+  <h1>Solicitar turno</h1>
+
+  <form id="formulario">
+    <input type="text" id="nombre" placeholder="Nombre" required>
+    <input type="text" id="apellido" placeholder="Apellido" required>
+
+    <input type="text" id="dia" placeholder="Seleccionar fecha" required>
+
+    <!-- SELECT EN VEZ DE INPUT TIME -->
+    <select id="hora" required>
+      <option value="">Seleccionar horario</option>
+    </select>
+
+    <input type="text" id="contacto" placeholder="Teléfono" required>
+    <input type="email" id="email" placeholder="Email" required>
+
+    <button type="submit">Solicitar turno</button>
+  </form>
+
+  <p id="mensaje"></p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/es.js"></script>
+<script src="/static/js/script.js"></script>
+</body>
+</html>

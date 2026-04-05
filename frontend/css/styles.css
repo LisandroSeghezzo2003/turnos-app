@@ -1,0 +1,423 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+  color: white;
+}
+
+/* CONTENEDOR */
+.container {
+  max-width: 500px;
+  width: 95%;
+  margin: 60px auto;
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* TITULO */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+/* INPUTS */
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #111;
+  color: white;
+  font-size: 14px;
+}
+
+input::placeholder {
+  color: #888;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #ff7a00;
+  box-shadow: 0 0 5px #ff7a00;
+}
+
+/* BOTÓN */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  border-radius: 8px;
+  border: none;
+  background: #ff7a00;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff9500;
+}
+
+/* MENSAJE */
+#mensaje {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #ff7a00;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #ff7a00;
+  margin: 10px auto 0;
+}
+/* ADMIN EN RESERVA */
+
+.admin-link {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.admin-link a {
+  text-decoration: none;
+  color: #ff7a00;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.admin-link a:hover {
+  color: #ff9500;
+}
+/* -------------CSS DASHBOARD----------- */
+
+/* TABLA */
+.dashboard-container {
+  max-width: 1100px;
+}
+
+.dashboard-section {
+  margin-top: 20px;
+}
+
+.dashboard-section h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.tabla-wrapper {
+  overflow-x: auto;
+  border-radius: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #111;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+thead {
+  background: #ff7a00;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #333;
+}
+
+tbody tr:nth-child(even) {
+  background: #1a1a1a;
+}
+
+tbody tr:nth-child(odd) {
+  background: #222;
+}
+
+tbody tr:hover {
+  background: #2d2d2d;
+}
+
+#mensaje-dashboard {
+  margin-top: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+button {
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* CALENDARIO */
+
+#calendar {
+  background: #111;
+  padding: 18px;
+  border-radius: 12px;
+  color: white;
+  margin-bottom: 25px;
+}
+
+.fc {
+  color: white;
+  font-size: 14px;
+}
+
+.fc .fc-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 15px !important;
+}
+
+.fc .fc-toolbar-title {
+  color: white;
+  font-size: 28px !important;
+  font-weight: 700;
+}
+
+.fc .fc-button {
+  background: #ff7a00 !important;
+  border: none !important;
+  color: white !important;
+  box-shadow: none !important;
+  padding: 8px 14px !important;
+  font-size: 14px !important;
+  border-radius: 8px !important;
+}
+
+.fc .fc-button:hover {
+  background: #ff9500 !important;
+}
+
+.fc .fc-button-active {
+  background: #cc6300 !important;
+}
+
+.fc .fc-col-header-cell {
+  background: #1a1a1a;
+  padding: 10px 0;
+}
+
+.fc .fc-daygrid-day {
+  background: #151515;
+}
+
+.fc .fc-day-today {
+  background: rgba(255, 122, 0, 0.12) !important;
+}
+
+.fc .fc-daygrid-day-frame {
+  min-height: 90px !important;
+  padding: 4px;
+}
+
+.fc .fc-daygrid-day-number {
+  color: white;
+  font-size: 14px;
+  padding: 6px;
+}
+
+.fc .fc-event {
+  background: #ff7a00 !important;
+  border: none !important;
+  color: white !important;
+  font-size: 12px !important;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+.fc .fc-scrollgrid {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #2a2a2a;
+}
+
+.fc-theme-standard td,
+.fc-theme-standard th {
+  border-color: #2d2d2d !important;
+}
+
+.fc .fc-toolbar-chunk {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.fc .fc-today-button {
+  margin-left: 10px !important;
+}
+
+.fc .fc-button-group {
+  display: flex;
+  gap: 10px;
+}
+
+/* MODULO */
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 20px;
+}
+
+.oculto {
+  display: none;
+}
+
+.modal-contenido {
+  background: #111;
+  color: white;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.45);
+  border: 1px solid #2d2d2d;
+  position: relative;
+}
+
+.modal-contenido h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: #ff7a00;
+}
+
+.modal-contenido p {
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+.cerrar-modal {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 26px;
+  cursor: pointer;
+  color: #ff7a00;
+}
+
+.cerrar-modal:hover {
+  color: #ff9500;
+}
+
+/* botones configuracion y cerrar sesion */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #2d2d2d;
+}
+
+.topbar-left h2 {
+  margin: 0;
+  font-size: 18px;
+  color: white;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.topbar-right a,
+.topbar-right button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  height: 18px;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.topbar-right a::after {
+  content: "|";
+  margin-left: 15px;
+  color: #555;
+}
+
+.topbar-action {
+  all: unset;
+  color: #ff7a00;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease;
+}
+
+.topbar-action:hover {
+  color: #ff9500;
+}
+/* Admin */
+
+.admin-panels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.admin-card {
+  background: #111;
+  border: 1px solid #2d2d2d;
+  border-radius: 12px;
+  padding: 18px;
+}
+
+.admin-card h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #ff7a00;
+  font-size: 18px;
+}
+
+.admin-card input {
+  margin-bottom: 10px;
+}
+
+#mensaje-credenciales,
+#mensaje-admin {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  .admin-panels {
+    grid-template-columns: 1fr;
+  }
+}

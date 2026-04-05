@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Configuración</title>
+  <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="topbar-right">
+      <a href="/dashboard" class="topbar-action">Volver</a>
+    </div>
+
+    <h1>Configuración</h1>
+
+    <div class="dashboard-section">
+      <h2>Cambiar credenciales</h2>
+
+      <input type="text" id="cred-actual" placeholder="Usuario actual">
+      <input type="text" id="cred-nuevo-user" placeholder="Nuevo usuario">
+      <input type="password" id="cred-nueva-pass" placeholder="Nueva contraseña">
+
+      <button id="btn-cambiar-credenciales">Guardar cambios</button>
+
+      <p id="mensaje-credenciales"></p>
+    </div>
+  </div>
+
+  <script src="/static/js/configuracion.js"></script>
+</body>
+</html>
