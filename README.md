@@ -141,7 +141,6 @@ Se recomienda cambiar estas credenciales desde la sección **Configuración**.
 * Envío de emails de confirmación
 * Notificaciones automáticas
 * Soporte multiusuario (roles)
-* Deploy en la nube (Render / Railway)
 * Versión mobile
 
 ---
