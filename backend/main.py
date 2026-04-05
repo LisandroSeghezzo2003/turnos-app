@@ -11,6 +11,11 @@ from pymongo import MongoClient
 from pymongo.errors import DuplicateKeyError
 from pwdlib import PasswordHash
 
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
 
 app = FastAPI()
 
@@ -24,7 +29,9 @@ app.add_middleware(
 
 app.mount("/static", StaticFiles(directory="frontend"), name="static")
 
-client = MongoClient("mongodb://localhost:27017")
+MONGO_URL = os.getenv("MONGO_URL")
+client = MongoClient(MONGO_URL)
+
 db = client["turnos_db"]
 coleccion = db["turnos"]
 usuarios = db["usuarios"]
@@ -32,9 +39,9 @@ usuarios = db["usuarios"]
 # =========================
 # SEGURIDAD
 # =========================
-SECRET_KEY = "cambiame-por-una-clave-larga-y-secreta"
+SECRET_KEY = os.getenv("SECRET_KEY")
 ALGORITHM = "HS256"
-ACCESS_TOKEN_EXPIRE_MINUTES = 60
+ACCESS_TOKEN_EXPIRE_MINUTES = int(os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES"))
 
 password_hash = PasswordHash.recommended()
 
