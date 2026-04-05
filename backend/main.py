@@ -120,7 +120,7 @@ def crear_admin_inicial(username: str, password: str):
         })
 
 
-crear_admin_inicial("lisandro", "tu_clave_nueva")
+crear_admin_inicial("admin", "1234")
 
 # =========================
 # PÁGINAS
@@ -230,7 +230,7 @@ def eliminar_turno(data: dict, request: Request):
 def configuracion_page(request: Request):
     get_current_admin(request)
     return FileResponse("frontend/pages/configuracion.html")
-    
+
 @app.put("/admins/credenciales")
 def cambiar_credenciales_admin(data: AdminUpdateCredentials, request: Request):
     admin_actual = get_current_admin(request)
