@@ -81,9 +81,6 @@ turnos_app/
 ```
 git clone https://github.com/lisandroseghezzo/turnos-app.git
 ```
-
----
-
 ### 2. Crear entorno virtual (opcional)
 
 ```
@@ -91,18 +88,13 @@ python -m venv venv
 venv\Scripts\activate
 ```
 
----
-
 ### 3. Instalar dependencias
 
 ```
 pip install fastapi uvicorn pymongo pyjwt pwdlib[argon2]
 ```
 
----
-
 ### 4. Ejecutar MongoDB
----
 
 ### 5. Ejecutar el servidor
 
@@ -112,11 +104,9 @@ python -m uvicorn backend.main:app --reload
 
 ---
 
----
-
 ## Credenciales iniciales
 
-Se crea automáticamente un usuario admin si no existe:
+Se crea automáticamente un usuario de administrador si no existe:
 
 ```
 usuario: admin
