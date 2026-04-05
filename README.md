@@ -153,7 +153,8 @@ Durante el desarrollo de este proyecto se utilizó inteligencia artificial como 
 - Mejora de la interfaz de usuario
 - Optimización del código
 
-Todas las decisiones finales, implementación y adaptación del sistema fueron realizadas de forma manual.
+*Todas las decisiones finales, implementación y adaptación del sistema fueron realizadas de forma manual.* 
+
 --
 ## Autor
 
