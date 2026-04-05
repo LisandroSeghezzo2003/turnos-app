@@ -25,8 +25,8 @@ Permite a los usuarios solicitar turnos y a los administradores gestionar reserv
 * Panel de administración protegido
 * Visualización de turnos en:
 
-  * 📋 Tabla
-  * 📅 Calendario interactivo
+  * Tabla
+  * Calendario interactivo
 * Cancelación de turnos
 * Visualización de detalles en modal
 * Configuración de credenciales (usuario y contraseña)
@@ -53,7 +53,7 @@ Permite a los usuarios solicitar turnos y a los administradores gestionar reserv
 
 ---
 
-## 📁 Estructura del proyecto
+## Estructura del proyecto
 
 ```
 turnos_app/
