@@ -4,7 +4,7 @@ Aplicación web para la gestión de turnos desarrollada con **FastAPI**, **Mongo
 
 Permite a los usuarios solicitar turnos y a los administradores gestionar reservas mediante un panel con calendario interactivo.
 
----
+--
 
 ## Funcionalidades
 
@@ -157,7 +157,17 @@ Se recomienda cambiar estas credenciales desde la sección **Configuración**.
 * Versión mobile
 
 ---
+## Uso de Inteligencia Artificial
 
+Durante el desarrollo de este proyecto se utilizó inteligencia artificial como herramienta de apoyo para:
+
+- Asistencia
+- Resolución de errores
+- Mejora de la interfaz de usuario
+- Optimización del código
+
+Todas las decisiones finales, implementación y adaptación del sistema fueron realizadas de forma manual.
+--
 ## Autor
 
 Proyecto desarrollado por **Lisandro Seghezzo**.
